@@ -16,4 +16,17 @@ webarchives:
           rewritten: 'http://webarchive.parliament.uk/{timestamp}/{url}'
           raw: 'http://webarchive.parliament.uk/{timestamp}id_/{url}'
 
+  ukp_qa:
+    name: 'UK Parliament Archives QA'
+    about: 'http://ukpqa.mirrorweb.com/'
 
+    apis:
+      memento:
+        timegate: 'http://ukpqa.mirrorweb.com/'
+        timemap: 'http://ukpqa.mirrorweb.com/timemap/*/'
+
+      wayback:
+        calendar: 'http://ukpqa.mirrorweb.com/*/'
+        replay:
+          rewritten: 'http://ukpqa.mirrorweb.com/{timestamp}/{url}'
+          raw: 'http://ukpqa.mirrorweb.com/{timestamp}id_/{url}'

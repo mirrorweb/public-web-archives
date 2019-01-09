@@ -1,0 +1,53 @@
+version: '1.0'
+
+webarchives:
+  MirrorWeb:
+    name: 'MirrorWeb'
+    about: 'https://webarchive.mirrorweb.com/'
+
+    collections: r'[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}'
+
+    apis:
+      memento:
+        timegate: 'https://webarchive.mirrorweb.com/{collection}/'
+        timemap: 'https://webarchive.mirrorweb.com/{collection}/timemap/*/'
+
+      wayback:
+        calendar: 'https://webarchive.mirrorweb.com/{collection}/*/'
+        replay:
+          rewritten: 'https://webarchive.mirrorweb.com/{collection}/{timestamp}/{url}'
+          raw: 'https://webarchive.mirrorweb.com/{collection}/{timestamp}id_/{url}'
+
+  MirrorWeb01:
+    name: 'MirrorWeb'
+    about: 'https://webarchive01.mirrorweb.com/'
+
+    collections: r'[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}'
+
+    apis:
+      memento:
+        timegate: 'https://webarchive01.mirrorweb.com/{collection}/'
+        timemap: 'https://webarchive01.mirrorweb.com/{collection}/timemap/*/'
+
+      wayback:
+        calendar: 'https://webarchive01.mirrorweb.com/{collection}/*/'
+        replay:
+          rewritten: 'https://webarchive01.mirrorweb.com/{collection}/{timestamp}/{url}'
+          raw: 'https://webarchive01.mirrorweb.com/{collection}/{timestamp}id_/{url}'
+
+  MirrorWeb02:
+    name: 'MirrorWeb'
+    about: 'https://webarchive02.mirrorweb.com/'
+
+    collections: r'[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}'
+
+    apis:
+      memento:
+        timegate: 'https://webarchive02.mirrorweb.com/{collection}/'
+        timemap: 'https://webarchive02.mirrorweb.com/{collection}/timemap/*/'
+
+      wayback:
+        calendar: 'https://webarchive02.mirrorweb.com/{collection}/*/'
+        replay:
+          rewritten: 'https://webarchive02.mirrorweb.com/{collection}/{timestamp}/{url}'
+          raw: 'https://webarchive02.mirrorweb.com/{collection}/{timestamp}id_/{url}'
