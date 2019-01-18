@@ -7,14 +7,14 @@ webarchives:
 
     apis:
       memento:
-        timegate: 'http://webarchive.nationalarchives.gov.uk/'
-        timemap: 'http://webarchive.nationalarchives.gov.uk/timemap/*/'
+        timegate: 'https://webarchive.nationalarchives.gov.uk/'
+        timemap: 'https://webarchive.nationalarchives.gov.uk/timemap/*/'
 
       wayback:
-        calendar: 'http://webarchive.nationalarchives.gov.uk/*/'
+        calendar: 'https://webarchive.nationalarchives.gov.uk/*/'
         replay:
-          rewritten: 'http://webarchive.nationalarchives.gov.uk/{timestamp}/{url}'
-          raw: 'http://webarchive.nationalarchives.gov.uk/{timestamp}id_/{url}'
+          rewritten: 'https://webarchive.nationalarchives.gov.uk/{timestamp}/{url}'
+          raw: 'https://webarchive.nationalarchives.gov.uk/{timestamp}id_/{url}'
   uk_na_qanotd:
     name: 'UK National Archives Patch NOTD'
     about: 'http://tnaqanotd.mirrorweb.com/'
@@ -47,6 +47,22 @@ webarchives:
         replay:
           rewritten: 'http://tnaqa.mirrorweb.com/{timestamp}/{url}'
           raw: 'http://tnaqa.mirrorweb.com/{timestamp}id_/{url}'
+
+  uk_na_qa_pywb2:
+    name: 'UK National Archives QA PYWB2'
+    about: 'http://tnaqa-pywb2.mirrorweb.com/'
+
+    apis:
+      memento:
+        timegate: 'http://tnaqa-pywb2.mirrorweb.com/'
+        timemap: 'http://tnaqa-pywb2.mirrorweb.com/timemap/*/'
+
+      wayback:
+        calendar: 'http://tnaqa-pywb2.mirrorweb.com/*/'
+        replay:
+          rewritten: 'http://tnaqa-pywb2.mirrorweb.com/{timestamp}/{url}'
+          raw: 'http://tnaqa-pywb2.mirrorweb.com/{timestamp}id_/{url}'
+
   eulaw:
     name: 'Eur-Lex'
     about: 'http://eulaw.mirrorweb.com/'
