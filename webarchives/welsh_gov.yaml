@@ -1,0 +1,17 @@
+version: '1.0'
+
+webarchives:
+  welsh_gov_qa:
+    name: 'Welsh Government QA'
+    about: 'http://welshgovernment-qa.mirrorweb.com/'
+
+    apis:
+      memento:
+        timegate: 'http://welshgovernment-qa.mirrorweb.com/'
+        timemap: 'http://welshgovernment-qa.mirrorweb.com/timemap/*/'
+
+      wayback:
+        calendar: 'http://welshgovernment-qa.mirrorweb.com/*/'
+        replay:
+          rewritten: 'http://welshgovernment-qa.mirrorweb.com/{timestamp}/{url}'
+          raw: 'http://welshgovernment-qa.mirrorweb.com/{timestamp}id_/{url}'
