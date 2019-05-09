@@ -51,3 +51,20 @@ webarchives:
         replay:
           rewritten: 'https://webarchive02.mirrorweb.com/{collection}/{timestamp}/{url}'
           raw: 'https://webarchive02.mirrorweb.com/{collection}/{timestamp}id_/{url}'
+          
+  ASI:
+    name: 'MirrorWeb'
+    about: 'https://asi.mirrorweb.app/'
+
+    collections: r'[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}'
+
+    apis:
+      memento:
+        timegate: 'https://asi.mirrorweb.app/{collection}/'
+        timemap: 'https://asi.mirrorweb.app/{collection}/timemap/*/'
+
+      wayback:
+        calendar: 'https://asi.mirrorweb.app/{collection}/*/'
+        replay:
+          rewritten: 'https://asi.mirrorweb.app/{collection}/{timestamp}/{url}'
+          raw: 'https://asi.mirrorweb.app/{collection}/{timestamp}id_/{url}'
