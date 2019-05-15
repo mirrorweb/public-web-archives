@@ -1,0 +1,17 @@
+version: '1.0'
+
+webarchives:
+  ca_radiocanada:
+    name: 'Radio Canada Web Archive'
+    about: 'http://ici-radio-canada-ca.mirrorweb.com/'
+
+    apis:
+      memento:
+        timegate: 'http://ici-radio-canada-ca.mirrorweb.com/'
+        timemap: 'http://ici-radio-canada-ca.mirrorweb.com/timemap/*/'
+
+      wayback:
+        calendar: 'http://ici-radio-canada-ca.mirrorweb.com/*/'
+        replay:
+          rewritten: 'http://ici-radio-canada-ca.mirrorweb.com/{timestamp}/{url}'
+          raw: 'http://ici-radio-canada-ca.mirrorweb.com/{timestamp}id_/{url}'
