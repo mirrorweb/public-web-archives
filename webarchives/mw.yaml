@@ -67,7 +67,7 @@ webarchives:
         calendar: 'https://app.mirrorweb.com/webarchive/{collection}/*/'
         replay:
           rewritten: 'https://app.mirrorweb.com/webarchive/{collection}/{timestamp}/{url}'
-          raw: 'https://app.mirrorweb.com/webarchive/{timestamp}id_/{url}'
+          raw: 'https://app.mirrorweb.com/webarchive/{collection}/{timestamp}id_/{url}'
 
   ASI:
     name: 'MirrorWeb'
