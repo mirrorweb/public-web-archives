@@ -52,6 +52,20 @@ webarchives:
           rewritten: 'https://webarchive02.mirrorweb.com/{collection}/{timestamp}/{url}'
           raw: 'https://webarchive02.mirrorweb.com/{collection}/{timestamp}id_/{url}'
           
+  NeoDelorian:
+    name: 'NeoDelorian'
+    about: 'https://neodelorian.mirrorweb.today/'
+    collections: r'[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}'
+    apis:
+      memento:
+        timegate: 'http://neodelorian.mirrorweb.today/timeline/{collection}/'
+        timemap: 'http://neodelorian.mirrorweb.today/timemap/{collection}/'
+      wayback:
+        calendar: 'http://neodelorian.mirrorweb.today/timeline/{collection}/'
+        replay:
+          rewritten: 'http://neodelorian.mirrorweb.today/replay/{collection}/{timestamp}/{url}'
+          raw: 'http://neodelorian.mirrorweb.today/raw/{collection}/{timestamp}/{url}'
+          
   MirrorWebApp:
     name: 'MirrorWeb'
     about: 'https://app.mirrorweb.com/webarchive/'
