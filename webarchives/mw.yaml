@@ -54,17 +54,17 @@ webarchives:
           
   NeoDelorian:
     name: 'NeoDelorian'
-    about: 'https://neodelorian.mirrorweb.today/'
+    about: 'https://webarchive.mirrorweb.com/neoarchive/'
     collections: r'[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}'
     apis:
       memento:
-        timegate: 'http://neodelorian.mirrorweb.today/timeline/{collection}/'
-        timemap: 'http://neodelorian.mirrorweb.today/timemap/{collection}/'
+        timegate: 'https://webarchive.mirrorweb.com/neoarchive/{collection}/'
+        timemap: 'https://webarchive.mirrorweb.com/neoarchive/{collection}/*/'
       wayback:
-        calendar: 'http://neodelorian.mirrorweb.today/timeline/{collection}/'
+        calendar: 'https://webarchive.mirrorweb.com/neoarchive/{collection}/*/'
         replay:
-          rewritten: 'http://neodelorian.mirrorweb.today/replay/{collection}/{timestamp}/{url}'
-          raw: 'http://neodelorian.mirrorweb.today/raw/{collection}/{timestamp}/{url}'
+          rewritten: 'https://webarchive.mirrorweb.com/neoarchive/{collection}/{timestamp}/{url}'
+          raw: 'https://webarchive.mirrorweb.com/neoarchive/{collection}/{timestamp}oe_/{url}'
           
   MirrorWebApp:
     name: 'MirrorWeb'
